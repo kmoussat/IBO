@@ -1,0 +1,8 @@
+c:\users\ken\documents\visual studio 2015\Projects\JSON\JSON\bin\Debug\JSON.exe.config
+c:\users\ken\documents\visual studio 2015\Projects\JSON\JSON\bin\Debug\JSON.exe
+c:\users\ken\documents\visual studio 2015\Projects\JSON\JSON\bin\Debug\JSON.pdb
+c:\users\ken\documents\visual studio 2015\Projects\JSON\JSON\bin\Debug\Newtonsoft.Json.dll
+c:\users\ken\documents\visual studio 2015\Projects\JSON\JSON\bin\Debug\Newtonsoft.Json.xml
+c:\users\ken\documents\visual studio 2015\Projects\JSON\JSON\obj\Debug\JSON.csprojResolveAssemblyReference.cache
+c:\users\ken\documents\visual studio 2015\Projects\JSON\JSON\obj\Debug\JSON.exe
+c:\users\ken\documents\visual studio 2015\Projects\JSON\JSON\obj\Debug\JSON.pdb
