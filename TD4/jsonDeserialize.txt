@@ -1,0 +1,35 @@
+	
+	// La classe de base pour matcher la donnée json
+        public class Account
+        {
+            public string Email { get; set; } // Le nom des propriétés est strictement identique à la donnée json qui sera matchée
+            public bool Active { get; set; }
+            public DateTime CreatedDate { get; set; }
+            public IList<string> Roles { get; set; }
+        }
+
+
+	// Code à tester
+		string json =
+				@"[
+				{ // 1er élément
+				'Email': 'james@example.com',
+				'Active': true,
+				'CreatedDate': '2013-01-20T00:00:00Z',
+				'Roles': ['User', 'Admin']
+				}
+			, 
+				{ // 2e élément
+				'Email': 'john@example.org',
+				'Active': false,
+				'CreatedDate': '2014-01-20T00:00:00Z',
+				'Roles': ['User', 'Admin']
+				}
+			]";
+
+		List<Account> account = JsonConvert.DeserializeObject<List<Account>>(json);
+
+		Console.WriteLine(account[1].Email);
+
+        }
+    
