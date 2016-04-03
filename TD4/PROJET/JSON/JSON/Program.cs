@@ -31,12 +31,39 @@ namespace JSON
             string jsonString = webClient.DownloadString("http://ibo.labs.esilv.fr/~webservice/api/data");
             List<Data> datas = JsonConvert.DeserializeObject<List<Data>>(jsonString);
 
+            Rappel r1 = new Rappel(rappelImpl1); function_rappel(2, r1);
+            Rappel r2 = new Rappel(rappelImpl2); function_rappel(2, r2);
 
+            Precision p1 = new Precision(preImpl1); function_precision(2, p1);
+            Precision p2 = new Precision(preImpl2); function_precision(2, p2);
 
             detectpas(datas[0],referencenomvmt, referencewalk, referencerun);
             Console.ReadKey();
 
         }
+
+        public delegate void Rappel(int c);
+
+        public static void rappelImpl1(int c) { Console.WriteLine("{0}", c); }
+        public static void rappelImpl2(int c) { Console.WriteLine("*{0} *", c); }
+
+        public static void function_rappel(int d, Rappel rappel)
+        {
+            /* Fonction rappel Appatenance*/
+
+        }
+
+        public delegate void Precision(int c);
+
+        public static void preImpl1(int c) { Console.WriteLine("{0}", c); }
+        public static void preImpl2(int c) { Console.WriteLine("*{0} *", c); }
+
+        public static void function_precision(int d, Precision precision)
+        {
+            /* Fonction precision Attribution*/
+        }
+
+
 
         public static void printValues(double[,] onche)
         {
